@@ -1,0 +1,92 @@
+/* 
+
+font: dosis 400, 800
+color: FF6768
+
+*/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #F3F7F8;
+}
+
+#app {
+    width: 400px;
+    min-height: 600px;
+    padding-bottom: 40px;
+    background: linear-gradient(
+        to bottom, #FF6768 0%, 
+        #FF6768 30%, #fff 30%);
+    border-radius: 10px;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+}
+
+#app::before {
+    position: absolute;
+    content: 'Jokes App';
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 50px;
+    color: #F3F7F8;
+}
+
+
+#joke-card {
+    width: 90%;
+    min-height: 300px;
+    padding: 100px 30px;
+    margin: 30% auto 0 auto;
+    background-color: #fff;
+    border-radius: inherit;
+    position: relative;
+    box-shadow: 0px 4px 14px #0000000d;
+}
+
+#joke-text {
+    font-size: 25px;
+    line-height: 45px;
+}
+
+#joke-text > p:nth-child(even) {
+    background-color: #FDF1F0;
+}
+
+#joke-text > p:nth-child(odd) {
+    background-color: #F1FFEF;
+}
+
+
+#joke-reload {
+    width: 50px;
+    height: 50px;
+    background-color: #FF6768;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    box-shadow: inherit;
+    cursor: pointer;
+}
+
+#joke-reload > svg {
+    font-size: 40px;
+    color: #fff;
+}
+
+
+
+
